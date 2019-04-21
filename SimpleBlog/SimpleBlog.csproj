@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.DiskQuota\CKFinder.Connector.Plugin.DiskQuota.csproj" />
+    <None Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.GetFileInfo\CKFinder.Connector.Plugin.GetFileInfo.csproj" />
+    <None Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.UserActionsLogger\CKFinder.Connector.Plugin.UserActionsLogger.csproj" />
+    <None Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.Watermark\CKFinder.Connector.Plugin.Watermark.csproj" />
+    <None Include="wwwroot\ckfinder\src\CKFinder.Connector.WebApp\CKFinder.Connector.WebApp.csproj" />
+    <None Include="wwwroot\ckfinder\src\CKFinder.Connector.WebApp\CKFinder.Connector.WebApp.csproj.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleBlog.Bll\SimpleBlog.Bll.csproj" />
+    <ProjectReference Include="..\SimpleBlog.Dal\SimpleBlog.Dal.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\ckfinder\App_Data\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.DiskQuota\bin\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.DiskQuota\obj\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.GetFileInfo\bin\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.GetFileInfo\obj\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.UserActionsLogger\bin\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.UserActionsLogger\obj\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.Watermark\bin\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.Plugin.Watermark\obj\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.WebApp\bin\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.WebApp\obj\Debug\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.WebApp\Properties\PublishProfiles\" />
+    <Folder Include="wwwroot\ckfinder\src\CKFinder.Connector.WebApp\userfiles\" />
+    <Folder Include="wwwroot\ckfinder\userfiles\" />
+  </ItemGroup>
+
+</Project>

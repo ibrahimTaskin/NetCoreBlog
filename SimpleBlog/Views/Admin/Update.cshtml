@@ -1,0 +1,48 @@
+﻿@model SimpleBlog.Models.PostUpdateViewModel
+@using System.Threading.Tasks
+@using SimpleBlog.Models
+<script src="~/ckeditor/ckeditor.js"></script>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/_AdminLayout.cshtml";
+}
+
+<h2>Post Güncelleme</h2>
+<form asp-controller="Admin" asp-action="Update" method="post">
+    <div class="form-group">
+        <label asp-for="Post.Title"></label>
+        <input asp-for="Post.Title" class="form-control" placeholder="Başlık" />
+        <span asp-validation-for="Post.Title"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Post.Category"></label>
+        <select asp-for="Post.Category.CategoryId" class="form-control"
+                asp-items="@(new SelectList(Model.Categories,"CategoryId","CategoryName"))"></select>
+        <span asp-validation-for="Post.Category.CategoryId"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Post.Author"></label>
+        <select asp-for="Post.Author.AuthorId" class="form-control"
+                asp-items="@(new SelectList(Model.Authors,"AuthorId","Name"))"></select>
+        <span asp-validation-for="Post.Author.AuthorId"></span>
+    </div>
+    <div>
+        <label asp-for="Post.Content"></label>
+        <textarea asp-for="Post.Content" class="form-control">@Model.Post.Content</textarea>
+        <span asp-validation-for="Post.Content"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Post.Tarih"></label>
+        <input asp-for="Post.Tarih" class="form-control" placeholder="Tarih" />
+        <span asp-validation-for="Post.Tarih"></span>
+    </div>
+    <input type="submit" value="Update" class="btn btn-xs btn-success" />
+    @*postId ye göre günceleme yapılır.*@
+    <input type="hidden" asp-for="Post.PostId" />
+    <a class="btn btn-xs btn-info" asp-controller="Admin" asp-action="Index">Geri Dön</a>
+
+</form>
+<script>
+    CKEDITOR.replace('Post.Content');
+</script>

@@ -1,0 +1,42 @@
+﻿@model SimpleBlog.Models.PostListView
+@addTagHelper "*,SimpleBlog"
+@{
+    Layout = "~/Views/_AdminLayout.cshtml";
+}
+
+<a class="btn btn-xs btn-success" asp-controller="Admin" asp-action="Add">Yeni Post Ekle</a>
+<div>
+    <table class="table table-responsive">
+        <tr>
+            <td>Yazar Adı</td>
+            <td>Kategori Adı</td>
+            <td>Başlık</td>
+            <td>İçerik</td>
+            <td>Tarih</td>
+            <td></td>
+            <td></td>
+        </tr>
+        @foreach (var post in Model.Posts)
+        {
+        <tr>
+            <td>@post.Author.Name</td>
+            <td>@post.Category.CategoryName</td>
+            <td>@Html.Raw(@post.Title)</td>
+            @if (@post.Content.ToString().Length>50)
+            {
+                <td>@post.Content.Substring(0,50)</td>
+            }
+            else
+            {
+                <td>@post.Content</td>
+            }
+            <td>@post.Tarih</td>
+            <td><a class="btn btn-xs btn-info" asp-controller="Admin" asp-action="Update" asp-route-postId="@post.PostId">Güncelle</a></td>
+            <td><a class="btn btn-xs btn-danger" asp-controller="Admin" asp-action="Delete" asp-route-postId="@post.PostId">Sil</a></td>
+        </tr>
+        }
+    </table>
+</div>
+
+
+

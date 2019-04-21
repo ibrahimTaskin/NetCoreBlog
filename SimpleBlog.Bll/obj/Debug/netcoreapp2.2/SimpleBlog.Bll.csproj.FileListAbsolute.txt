@@ -1,0 +1,16 @@
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Bll.deps.json
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Bll.dll
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Bll.pdb
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Core.dll
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Dal.dll
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Entities.dll
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Dal.pdb
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Core.pdb
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\bin\Debug\netcoreapp2.2\SimpleBlog.Entities.pdb
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\obj\Debug\netcoreapp2.2\SimpleBlog.Bll.csprojAssemblyReference.cache
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\obj\Debug\netcoreapp2.2\SimpleBlog.Bll.csproj.CoreCompileInputs.cache
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\obj\Debug\netcoreapp2.2\SimpleBlog.Bll.AssemblyInfoInputs.cache
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\obj\Debug\netcoreapp2.2\SimpleBlog.Bll.AssemblyInfo.cs
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\obj\Debug\netcoreapp2.2\SimpleBlog.Bll.csproj.CopyComplete
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\obj\Debug\netcoreapp2.2\SimpleBlog.Bll.dll
+D:\Programlar\C# Proje\SimpleBlog\SimpleBlog.Bll\obj\Debug\netcoreapp2.2\SimpleBlog.Bll.pdb

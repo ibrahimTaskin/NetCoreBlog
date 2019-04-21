@@ -1,0 +1,42 @@
+﻿@model SimpleBlog.Models.PostListView
+@addTagHelper "*,SimpleBlog"
+@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@foreach (var post in Model.Posts)
+{
+    <div class="post-preview">
+        <a asp-controller="Blog" asp-action="Post" asp-route-postId="@post.PostId">
+            <h2 class="post-title">
+                @Html.Raw(@post.Title)
+            </h2>
+        </a>
+        <p class="post-meta">
+            @post.Author.Name   &nbsp;
+            @post.Tarih.ToShortDateString()    &nbsp;
+            @post.Category.CategoryName
+        </p>
+        <h3 class="post-subtitle">
+            @if (@post.Content.ToString().Length > 50)
+            {
+                @Html.Raw(@post.Content.Substring(0, 50))
+            }
+            else
+            {
+                @Html.Raw(@post.Content)
+            }
+            .....
+        </h3>
+    </div>
+    <hr>
+}
+
+<product-list-pager current-category="@Model.CurrentCategory"
+                    current-page="@Model.CurrentPage"
+                    page-count="@Model.PageCount"
+                    page-size="@Model.PageSize">
+
+</product-list-pager>
+
+

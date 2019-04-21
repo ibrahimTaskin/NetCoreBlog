@@ -1,0 +1,26 @@
+﻿@model SimpleBlog.Models.PostListView
+
+@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@foreach (var post in Model.Posts)
+{
+        <div class="" col-md-12">
+
+            <h2 class="post-title">
+                @Html.Raw(@post.Title)<br/>
+            </h2>
+            
+                @Html.Raw(@post.Content)<br/>
+            
+
+            <p class="post-meta">
+                Yazar : @Html.Raw(@post.Author.Name) <br />
+                Tarih : @Html.Raw(@post.Tarih)<br />
+                Kategori: @Html.Raw(@post.Category.CategoryName)<br />
+                @post.Author.Image
+            </p>
+        </div>
+       
+}
